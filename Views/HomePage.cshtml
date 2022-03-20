@@ -2,32 +2,34 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-	Layout = "Master.cshtml";
+  Layout = "Master.cshtml";
 }
 
-<div class="p-5 mb-4 bg-light rounded-3">
-    <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">@Model.Value("welcomeTitle")</h1>
-        <p class="col-md-8 fs-4">
-            @Model.Value("welcomeBodyText")
-        </p>
-    </div>
+<div class="row flex-lg-row-reverse align-items-center py-3">
+  <div class="col-10 col-sm-8 col-lg-6">
+    <img src="/media/hlxjy1vm/image_processing20191130-19863-x5q5zi.png" class="d-block mx-lg-auto img-fluid"
+      alt="Welcome logo" width="700" height="500" loading="lazy">
+  </div>
+  <div class="col-lg-6">
+    <h1 class="display-5 fw-bold lh-1 mb-3">@Model.Value("welcomeTitle")</h1>
+    <p class="lead">@Model.Value("welcomeBodyText")</p>
+  </div>
 </div>
 
 <div class="row align-items-md-stretch">
-    <div class="col-md-6">
-        <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>@Model.Value("homePageAboutMeTitle")</h2>
-          <p>@Model.Value("homePageAboutMeBody")</p>
-          <a class="btn btn-outline-light" href="/about-me" role="button">To About me</a>
-        </div>
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-dark rounded-3">
+      <h2>@Model.Value("homePageAboutMeTitle")</h2>
+      <p>@Model.Value("homePageAboutMeBody")</p>
+      <a class="btn btn-outline-light" href="/about-me" role="button">To about me</a>
     </div>
-    
-    <div class="col-md-6">
-        <div class="h-100 p-5 text-white bg-info rounded-3">
-          <h2>@Model.Value("homePageArticlesTitle")</h2>
-          <p>@Model.Value("homePageArticlesBody")</p>
-          <a class="btn btn-outline-light" href="/about-me" role="button">My Articles</a>
-        </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-secondary rounded-3">
+      <h2>@Model.Value("homePageArticlesTitle")</h2>
+      <p>@Model.Value("homePageArticlesBody")</p>
+      <a class="btn btn-outline-light" href="/articles" role="button">My articles</a>
     </div>
+  </div>
 </div>

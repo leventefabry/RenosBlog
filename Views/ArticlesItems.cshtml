@@ -1,0 +1,16 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ArticlesItems>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+<h1>@Model.Value("articleTitle")</h1>
+
+<hr>
+
+<div>
+    @Model.Value("articleBody")
+</div>
+
+<a href="/articles" class="btn btn-outline-secondary mt-5" role="button">Go back to Articles</a>
