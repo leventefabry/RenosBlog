@@ -14,10 +14,20 @@
     </div>
 </div>
 
-<div class="col-md-6">
-    <div class="h-100 p-5 text-white bg-dark rounded-3">
-      <h2>@Model.Value("homePageAboutMeTitle")</h2>
-      <p>@Model.Value("homePageAboutMeBody")</p>
-      <a class="btn btn-outline-light" href="/about-me" role="button">To About me</a>
+<div class="row align-items-md-stretch">
+    <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2>@Model.Value("homePageAboutMeTitle")</h2>
+          <p>@Model.Value("homePageAboutMeBody")</p>
+          <a class="btn btn-outline-light" href="/about-me" role="button">To About me</a>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-info rounded-3">
+          <h2>@Model.Value("homePageArticlesTitle")</h2>
+          <p>@Model.Value("homePageArticlesBody")</p>
+          <a class="btn btn-outline-light" href="/about-me" role="button">My Articles</a>
+        </div>
     </div>
 </div>
